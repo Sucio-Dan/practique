@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+
+body {
+  font-family: sans-serif;
+  background-color: black;
+}
+
+
+
+ .seccionAvatars{
+  display: flex;
+  background: rgb(223,16,185);
+background: linear-gradient(90deg, rgba(223,16,185,1) 6%, rgba(39,0,175,1) 59%, rgba(171,0,103,1) 100%);
+
+}
+
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+/*nav*/
+
+header {
+  background-color: #0e0e0e;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  padding: 45px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 3em;
+}
+.logo img {
+  width: 75px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
+nav{
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+   
+  }
+  
+nav a {
+  margin: 20px;
+  display: inline;
+  
+  
+}
+
+nav a:hover {
+  color: black;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  background-color: rgb(163, 20, 20);
+  border-radius: 50px;
+  padding: 7px;
+}
+
+/*seccion ofertas*/
+.banner {
+  display: flex;
+  /* justify-content: end; */
+  border-radius: 0;
+  width: auto;
+  height: 80vh;
+  background-image: url("../images/maxresdefault.webp");
+  background-position: 25% 45%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* transform: scaleX(-1); */
+}
+
+@media (max-width: 768px) {
+  .banner {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+  }
+}
+
+.bannerCard {
+  background: linear-gradient(#ea1e63, #ea1e6227) ;
+  /* transform: scaleX(-1); */
+  margin: 3rem;
+  width: 420px;
+  height: 450px;
+}
+
+
+.bannerCard ul {
+  margin-top: 2rem;
+  list-style: none;
+  color: white;
+}
+.bannerCard li {
+  font-weight: bold;
+  font-size: 2em;
+  padding: 15px 10px;
+}
+.bannerCard li:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #3e5757e0;
+  transition: 0.5s ease-in-out;
+}
+
+.bannerCard .control {
+  display: flex;
+  justify-content: center;
+}
+
+.bannerCard button {
+  background-color: white;
+  border: none;
+  padding: 5px;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.bannerCard button:hover {
+  background-color: rgb(172, 172, 172);
+  transition: 0.3s ease-in-out;
+}
+
+.banerOfertas {
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.avatarConteiner{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionPlatillos{
+  height: 1000px;
+  background: rgb(149,21,57);
+  background: linear-gradient(90deg, rgba(149,21,57,1) 6%, rgba(152,0,0,0.9626225490196079) 56%, rgba(148,0,94,1) 100%);
+}
+.platillosh2{
+  text-align: center;
+  color: white;
+margin-top: 100px;
+margin-bottom: 60px;
+
+}
+
+
+.headerCategory img{  
+width: 500px;
+border: solid 1px white;
+
+}
+
+.pasta2 img{
+  width: 500px;
+  height: 300px;
+
+}
+
+/*avatars*/
+.avatarConteiner figure{
+  position: relative;
+  height: 330px;
+  width: 330px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+  cursor: pointer;
+
+}
+
+
+.avatarConteiner figure img{
+width: 100%;
+height: 100%;
+transition: all 500ms ease-out;  
+}
+
+.avatarConteiner figure .capa{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 103, 123, 0.7);
+  opacity: 0;
+  transition: all 500ms ease-out;  
+ visibility: hidden;
+text-align: center;
+}
+
+.avatarConteiner figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}   
+
+.avatarConteiner figure:hover >  img{
+  transform: scale(1.3);
+
+}
+
+.avatarConteiner figure:hover > .capa h3{
+margin-top: 40px;
+margin-bottom: 10px;
+
+}
+
+.avatarConteiner figure .capa h3{
+  color:#fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out; 
+  margin-top: 30px;
+}
+
+.avatarConteiner figure .capa p{
+ color: #fff;
+ font-size: 15px;
+ line-height: 1.5;
+ width: 100%;
+ max-width: 220px;
+ margin: auto;
+}
+
+
+/*Categorias*/
+.category {
+  text-align: center;
+  color: black;
+  height: 300px;
+}
+
+.category a {
+  padding: 30px;
+}
+
+/*Footer*/
+
+footer {
+  text-align: center;
+  padding: 3.5rem;
+  background-color: rgb(0, 0, 0);
+
+}
+ footer a{
+  margin: 300px;
+ }
+footer ul a {
+  margin: 20px;
+  display: inline;
+  color: rgb(255, 255, 255);
+}
+
+.footer a:hover {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  background-color: rgb(163, 20, 20);
+  border-radius: 50px;
+  color: #fff;
+  padding: 7px;
+}
+
+
+/*Contacto*/
+
+.container-form{
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 50px;
+  margin-top: 90px;
+}
+
+
+.container-form h2{
+  margin-bottom: 15px;
+  font-size: 35px;
+}
+
+.container-form p{
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.container-form a{
+  font-size: 17px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color:rgb(163, 20, 20);
+  font-weight: 700;
+}
+
+.container-form h2{
+  color: white;
+}
+
+.container-form p {
+  color: white;
+}
+
+.container-form a i {
+  color: rgb(163, 20, 20);
+  margin-right: 10px;
+}
+
+.container-form form .campo, textarea{
+ width: 100%;
+ padding: 15px 10px;
+ font-size: 15px;
+ border: 1px solid #dbdbdb;
+ margin-bottom: 20px;
+ border-radius: 3px;
+ outline: 0px;
+
+}
+
+.container-form form textarea{
+
+max-width: 530px;
+min-width: 530px;
+min-height: 140px;
+max-height: 150px;
+
+}
+
+
+.container-form .btn-enviar{
+
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background: rgb(163, 20, 20); 
+  color: white;
+  border-radius: 3px;
+  cursor:pointer;
+  transition: all 300ms ease;
+}
+
+.container-form .btn-enviar:hover{
+    background: #e39463;
+}
+
+
+/*Chefsito*/
+
+.chefsito{
+  display: flex;
+  align-items: center;
+}
+
+.chefsito p{
+
+  font-size: 25px;
+}
+
+.chefsito img{
+  width: 500px;
+
+}
+ 
+.h1chefsito{
+  color: white;
+  background-color: rgb(124, 25, 25);
+padding: 30px;
+  text-align: center;
+}
